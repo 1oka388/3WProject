@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Δημιουργία φόρμας συλλογής στοιχείων</title>
+		<meta charset="UTF-8">
+		<style>
+			* {color: green; } /*Όλα τα στοιχεία*/
+			div > p {color: blue;} /* Άμεσος απόγονος */
+			ul em { color: red;} /*Περιλαμβάνεται*/
+			h2 + p {color:black;} /* Γειτονικά*/
+			p + h2 {color:navy;} /* Γειτονικά*/
+			/*Χαρακτηριστικά σε πεδία input*/
+			input[type="text"] { /* και όποιος άλλος τύπος */ color: green;}
+			input[type="reset"] { /* και όποιος άλλος τύπος */ color: red;}
+			input[maxlength] {border: 1px solid red;}
+		</style>			
+	</head>
+	
+	<body>
+		<form >
+			Όνομα: <input type="text" name="firstname"  size="30"><br>
+			Διεύθυνση: <textarea name="addr" rows="3" cols="30" readonly> </textarea><br>
+			Ταχ. Κωδικός: <input type="text" name="zip" placeholder="Ταχυδρομικοί Κωδικοί" size="6" maxlength="6"><br >
+			<label for="usrname"> Username:</label>
+			<textarea name="usrname" id= "usrname" cols="12" rows="1" placeholder="username"></textarea>
+			<label for="passwrd"> Password:</label>
+			<input size="12" id="passwrd" type="password" placeholder="password"></input>
+			<input type="reset" value="Reset">
+			<input type="submit" value="Αποστολή Στοιχείων">
+		</form>
+		<br><br><br>
+		<label for="lastname2018"> Επώνυμο:</label>
+		<input type="text" id="lastname2018" name="lastname"><br>
+		Διεύθυνση Κατοικίας: <textarea name="homeaddr"> </textarea><br>
+		<label for="homezip2018"> Ταχ. Κωδικός κατοικίας:</label>
+		<input type="text" name="homezip" id="homezip2018" ><br >
+		<br><br><br>
+		<fieldset>
+		<legend>Στοιχεία Επικοινωνίας</legend>
+		<label for="firstname2">Όνομα:</label>
+		<input value="Όνομα" type="text" id="firstname2" name="firstname2"><br>
+		Διεύθυνση: <textarea name="addr2"> </textarea><br>
+		<label for="zip2">Ταχ. Κωδικός:</label>
+		<input placeholder="Ταχυδρομικοί Κωδικοί " type="text" name="zip2" id="zip2" ><br >
+		<label for="email">Email:</label>
+		<input type="email" id="email" placeholder="hw_webtech@unipi.gr">
+		</fieldset>
+	
+		<br><br><br>
+		Χώρα: <select name="country" size="4" multiple>
+			<option>UK</option>
+			<option  selected>Greece</option>
+			<option>Italy</option>
+			<option>France</option>
+		</select>
+		<br>
+		
+		Χώρα: <select multiple size="5" name="mediterranean">
+			<option >UK</option>
+			<optgroup label="Μεσογειακές Χώρες">
+				<option selected>Greece</option>
+				<option>Italy</option>
+			</optgroup>
+			<option>France</option>
+		</select><br>
+		
+		<br><br><br><br>
+		<fieldset>
+			<legend>Μέθοδοι πληρωμής</legend>
+				<label for="radio1"> Cash </label>
+				<input type="radio" name="payment" value="p1" id="radio1">
+				<label for="radio2"> Debit/Credit </label>
+				<input type="radio" name="payment" value="p2" id="radio2">
+				<label for="radio3"> PayPal </label>		
+				<input type="radio" name="payment" value="p3" id="radio3" checked>
+		</fieldset>
+		<br>
+		
+		<br><br><br>
+		**************
+		<p>Αυτή είναι μια απλή πρόταση</p>
+		<table>
+			<tr><td>first</td><td>second</td><td>third</td></tr>
+			<tr><td>fourth</td><td>fifth</td><td>sixth</td></tr>
+		</table>
+		
+		<div>
+			<p>Αυτή είναι μια απλή πρόταση 2</p>
+			<strong><p>Αυτή είναι μια απλή πρόταση 3</p></strong>
+		</div>
+		<ul>
+			<li><em>πρώτο στοιχείο λίστας</em></li>
+			<li>δεύτερο στοιχείο λίστας</li>
+			<li>τρίτο στοιχείο λίστας</li>
+		</ul>
+		<h2>Επικεφαλίδα HTML</h2>
+		<p>Αυτή είναι μια απλή πρόταση 4</p>
+		<h2>Επικεφαλίδα HTML</h2>
+		
+		
+		
+		
+	</body>
+</html>
